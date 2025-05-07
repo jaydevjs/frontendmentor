@@ -4,6 +4,7 @@
 :root {
     --bg-color: #0A0C1C;
     --mask-color: #AB5CDB;
+    --container-bg-color: #1B1937;
     --white: #FFFFFF;
 }
 
@@ -23,7 +24,6 @@
     font-style: normal;
 }
 
-
 html, body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -32,22 +32,61 @@ html, body {
     color: var(--white);
 }
 
+span {
+    color: var(--mask-color);
+}
 
-section {
+h2 {
+    font-size: 1.5rem;
+}
+
+.bottom-content p {
+    font-size: 0.75rem;
+}
+
+
+.image-desktop {
+    object-fit: cover;
+    border-radius: 0 8px 8px 0;
+}
+
+.image-mobile {
+    display: none;
+}
+
+.parent-container {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.centered-container {
+    background-color: var(--container-bg-color);
+    width: 1110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
 }
 
 
 
+.bottom {
+    display: flex;
 
+}
 
-/* .image-desktop {
-    display: block;
+img {
     width: 100%;
-    height: auto;
-} */
+}
 
-.image-mobile {
-    display: none;
+
+
+#image-container {
+    width: 50%;
+}
+
+#content-container {
+    width: 50%;
 }
